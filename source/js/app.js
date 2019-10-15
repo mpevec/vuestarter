@@ -1,4 +1,5 @@
 // ES6 
+// LESSON 1 (Binding)
 const hello = (name) => {
     return `Hello ${name}`;
 };
@@ -6,7 +7,19 @@ const hello = (name) => {
 new Vue({
     el: '#app',
     data: {
+        // LESSON 1 (Binding)
         inputValue: hello('you, Vue user!'),
+
+        // LESSON 2 (Array, Event Listener)
+        names: ['Jane', 'Martin', 'Jonas'], 
+        newName: undefined,   
+    },
+    methods: {
+
+        // LESSON 2 (Array, Event Listener)
+        addName() {
+            this.names.push(this.newName);        
+        }
     }
 });
 

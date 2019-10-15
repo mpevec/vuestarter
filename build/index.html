@@ -8,8 +8,26 @@
 </head>
 <body>
   <div id="app">
-    <input type="text" v-model="inputValue" >
-    <p>{{ inputValue }}</p>
+
+    <!-- LESSON 1 (Binding) -->
+    <div class="lesson">
+      <input type="text" v-model="inputValue" >
+      <p>{{ inputValue }}</p>
+    </div>  
+    <!-- LESSON 1 END -->
+
+    <!-- LESSON 2 (List and event listener) -->
+    <div class="lesson">
+      Names:
+      <ul>
+        <li v-for="name in names">{{ name }}</li>
+      </ul>
+      Name to be added:
+      <input type="text" v-model="newName">
+      <button v-on:click="addName">Add name</button><!-- We could use @click="..." -->
+    </div>
+    <!-- LESSON 2 END -->
+  
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
