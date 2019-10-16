@@ -68,6 +68,8 @@ function css(done) {
 function clean() {
     return del([
         scriptDest + '**/*.js',
+        scriptDest + '**/*.map',
+        styleDest + '**/*.css',
       ]);
 };
 

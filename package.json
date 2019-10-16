@@ -4,7 +4,7 @@
     "description": "Starter Kit",
     "main": "index.html",
     "scripts": {
-        "gulp": "./node_modules/gulp/bin/gulp.js"
+        "gulp": "gulp"        
     },
     "author": "Milan Pevec",
     "license": "ISC",
@@ -27,3 +27,4 @@
     },
     "dependencies": {}
 }
+
