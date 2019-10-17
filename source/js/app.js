@@ -13,6 +13,9 @@ new Vue({
         // LESSON 2 (Array, Event Listener)
         names: ['Jane', 'Martin', 'Jonas'], 
         newName: undefined,   
+
+        // LESSON 3 (Class binding)
+        isButtonBig: true,
     },
     methods: {
 
