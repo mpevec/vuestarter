@@ -9,12 +9,14 @@
 <body>
   <div id="app">
 
+
     <!-- LESSON 1 (Binding) -->
     <div class="lesson">
       <input type="text" v-model="inputValue" >
       <p>{{ inputValue }}</p>
     </div>  
     <!-- LESSON 1 END -->
+
 
     <!-- LESSON 2 (List and event listener) -->
     <div class="lesson">
@@ -28,9 +30,18 @@
     </div>
     <!-- LESSON 2 END -->
   
+
     <!-- LESSON 3 (attribute binding) -->
     <button :class="{ 'is-big': isButtonBig }">Classy Button</button>
-    <!-- LESSON 2 END -->
+    <!-- LESSON 3 END -->
+
+
+    <!-- LESSON 4 (Computed property) -->
+    <div class="lesson">
+      <p>{{ reverseInputValue }}</p>
+    </div>  
+    <!-- LESSON 4 END -->
+
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

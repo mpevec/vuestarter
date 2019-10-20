@@ -23,6 +23,12 @@ new Vue({
         addName() {
             this.names.push(this.newName);        
         }
+    },
+    computed: {
+        // LESSON 4 (Computed property)
+        reverseInputValue() {
+            return this.inputValue.split('').reverse().join('');
+        }
     }
 });
 
