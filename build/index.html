@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="assets/css/main.min.css" />
 </head>
 <body>
-  <div id="app">
+  <div id="app" class="wrapper">
 
+    <h1>VUE basic lessons</h1>  
 
     <!-- LESSON 1 (Binding) -->
     <div class="lesson">
@@ -42,8 +43,16 @@
     </div>  
     <!-- LESSON 4 END -->
 
+
+    <!-- LESSON 5 (REST) -->
+    <div class="lesson">
+      <p>Converted bit coin value of 500 EUR: {{ convertedBitCoin }}</p>
+    </div>  
+    <!-- LESSON 5 END -->
+
   </div>
 
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/main.js"></script>

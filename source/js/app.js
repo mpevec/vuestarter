@@ -16,6 +16,9 @@ new Vue({
 
         // LESSON 3 (Class binding)
         isButtonBig: true,
+
+        // LESSON 5 (REST)
+        convertedBitCoin: undefined,
     },
     methods: {
 
@@ -29,6 +32,14 @@ new Vue({
         reverseInputValue() {
             return this.inputValue.split('').reverse().join('');
         }
+    },
+
+    // LESSON 5 (REST)
+    mounted() {
+        // ajax request using axios
+        axios.get('https://blockchain.info/tobtc?currency=EUR&value=500').then((response) => {
+            response && response.data ? this.convertedBitCoin = response.data : null;
+        });
     }
 });
 

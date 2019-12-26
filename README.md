@@ -1,6 +1,6 @@
-# SASS, Vue Starter Kit
+# SASS, Vue, Axion, Gulp Starter Kit
 
-For easier start.
+For easier start to create simple web application using mentioned technologies. It uses Gulp only as devDependency, other libraries are loaded via CDNs.
 
 ***
 
